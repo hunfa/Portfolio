@@ -64,7 +64,7 @@ export const WavingAvatarHero: React.FC<WavingAvatarHeroProps> = ({
       <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-gradient-to-br from-amber-500/10 via-pink-600/10 to-transparent blur-[140px] rounded-full pointer-events-none -z-10" />
 
       <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        
+
         {/* Left Column: Cover Content & Tagline */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -201,7 +201,7 @@ export const WavingAvatarHero: React.FC<WavingAvatarHeroProps> = ({
             {/* Avatar Container: Clean, Crisp Original Avatar */}
             <div className="relative w-full h-full rounded-full overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.8)] border-4 border-amber-400/70 bg-[#141416]">
               <img
-                src="/hunfa-avatar.png"
+                src="/real-hunfa-avatar.png"
                 alt="Muhammad Hunfa Jalil"
                 className="w-full h-full object-cover select-none group-hover:scale-105 transition-transform duration-500"
               />
@@ -225,11 +225,10 @@ export const WavingAvatarHero: React.FC<WavingAvatarHeroProps> = ({
           <div className="mt-6 flex flex-col items-center gap-2 z-30">
             <button
               onClick={triggerGreeting}
-              className={`px-6 py-2.5 rounded-full font-bold text-sm flex items-center gap-2.5 shadow-lg transition-all duration-300 transform active:scale-95 cursor-pointer ${
-                isGreeted
+              className={`px-6 py-2.5 rounded-full font-bold text-sm flex items-center gap-2.5 shadow-lg transition-all duration-300 transform active:scale-95 cursor-pointer ${isGreeted
                   ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-emerald-500/40'
                   : 'bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 text-slate-950 hover:from-amber-300 hover:to-yellow-300 shadow-amber-400/30 hover:shadow-amber-400/50'
-              }`}
+                }`}
             >
               <Hand className={`w-4 h-4 ${isGreeted ? 'animate-bounce' : ''}`} />
               <span>{isGreeted ? 'Greeting Sent! 🎉' : 'Say Hello 👋'}</span>

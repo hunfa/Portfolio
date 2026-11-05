@@ -10,11 +10,11 @@ export const Footer: React.FC = () => {
   return (
     <footer className="relative border-t border-white/10 bg-[#030408] py-12 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        
+
         {/* Left: Avatar & Bio */}
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full overflow-hidden border border-amber-400/60 flex-shrink-0">
-            <img src="/hunfa-avatar.png" alt="Hunfa Avatar" className="w-full h-full object-cover" />
+            <img src="/real-hunfa-avatar.png" alt="Hunfa Avatar" className="w-full h-full object-cover" />
           </div>
           <div>
             <span className="text-sm font-bold text-white block">Muhammad Hunfa Jalil</span>

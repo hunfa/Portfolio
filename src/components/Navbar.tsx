@@ -31,17 +31,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onWaveClick }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 py-4 pointer-events-none">
       <div
-        className={`max-w-7xl mx-auto rounded-full px-5 py-3 transition-all duration-300 pointer-events-auto flex items-center justify-between ${
-          scrolled
+        className={`max-w-7xl mx-auto rounded-full px-5 py-3 transition-all duration-300 pointer-events-auto flex items-center justify-between ${scrolled
             ? 'glass-card border-white/15 bg-slate-950/85 backdrop-blur-2xl shadow-[0_10px_35px_rgba(0,0,0,0.6)]'
             : 'bg-transparent border border-transparent'
-        }`}
+          }`}
       >
         {/* Brand / Logo */}
         <a href="#hero" className="flex items-center gap-3 group">
           <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-amber-400/80 shadow-[0_0_15px_rgba(245,185,33,0.3)]">
             <img
-              src="/hunfa-avatar.png"
+              src="/real-hunfa-avatar.png"
               alt="Hunfa Avatar"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
